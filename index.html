@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>TYPING TEST</h1>
+            <p class="intro">Test your typing speed </p>
+            <button class="start button" onclick="StartGame()">Start the test</button>
+            <button class="end button" onclick="endGame()">End</button>
+          </header>   
+          <div class="column">  
+                <div class="row">
+                    <div class="timeg">
+                        <section class="demos">
+                            <div class="box negative-spread-distance-box-shadow">Time</div>
+                            <div class="time"> <pre><code><strong> 60s </strong></code></pre></div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wordg">
+                        <section class="demos">
+                            <div class="box negative-spread-distance-box-shadow">Words per minute</div>   
+                            <div class="word"> <pre><code><strong> 10/minute </strong></code></pre></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <section class="demos">
+                        <div class="content">start</div>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="demos">
+                        <textarea class='input autoExpand box negative-spread-distance-box-shadow' placeholder='Type here' autofocus ninput="textInput()"
+                        onfocus="startGame()"></textarea>
+                    </section>
+                </div>
+            </div>
+            <script src="./JS/logic.js"></script>
+    </body>
+</html>
